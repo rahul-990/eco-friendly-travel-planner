@@ -1,0 +1,1657 @@
+//index html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>ECOTRAVEL</title>
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    
+          <div class="wed-real-section">
+            <nav class="home-style">
+              <div class="logoname"></div>
+            </nav>
+           
+              <header>
+              <h1>Eco-Friendly Travel Planner</h1>
+              <nav>
+                <ul>
+                   <a href="index.html" target="_blank"><u>Home</u></a>
+                   <a href="about.html" target="_blank">About</a>
+                   <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+                   <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+                  
+                   <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+                   
+                   <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+                  
+                   
+                   <a href="signup.html" target="_blank"><i>Sign up</i></a>
+                </ul>
+              </nav>
+  </header>
+    
+    
+    <div class="quote">
+      <h1 class="start-head">
+        <b> "Welcome To Eco Friendly Traval Planner"<br/> 
+        </b>
+      </h1>
+    </div> 
+
+</body>
+</html>
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Travel Planner. All rights reserved.</p>
+    </footer>
+
+//index css
+h1{
+    color: rgb(182, 238, 194);
+    /* padding: 10px; */
+    
+}
+body{
+    background-image: url(peakpx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    background: #080319;
+    color: #6a6a94;
+    padding: px;
+   border-top-color: #20c428; height:100px;
+   
+    
+}
+
+nav a {
+  float:left;
+  list-style-type:none;
+  cursor: pointer;
+  padding:19px 19px ; 
+font-family:"Verdana "; 
+display:block;
+color:rgb(201, 203, 203);
+font-weight:bold;
+font-size: 23px;
+text-align:center;
+text-decoration: none;
+font-size: 20px;
+}  
+nav a:hover{
+background-color:#268f22;
+} 
+
+.wed-real-section{
+  
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(0px);
+}
+
+nav button{
+color: rgb(19, 193, 54);
+background-color: rgb(233, 232, 232);
+border-radius:10px;
+
+text-align: end;
+}
+    *{
+        margin: 0px;
+        padding:0px;
+    }
+    
+ 
+    .start-head{
+      
+     
+    
+     padding: 160px;
+     text-align: center;
+     -webkit-text-stroke:rgb(226, 228, 227);
+     -webkit-text-stroke-width: 0.80px;
+    }
+    
+    
+
+    .quote h1{
+        opacity: 100;
+        font-size: 45px;
+        font-family:'Segoe  UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(240, 244, 245);
+        text-shadow: 2px 9px 5px #030303;
+        
+
+    }
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 500px;
+    }
+    
+    footer p {
+        font-size: 0.9em;
+    }
+    
+      
+      
+      
+//corbon footprint html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Travel - Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="carbon footprint.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Carbon Footprint Calculator</h1>
+        <p>Estimate the carbon emissions of your travel plans
+            <br>
+
+        </p>
+        <nav>
+            <ul>
+                <a href="index.html" target="_blank"><u>Home</u></a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+                <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+
+                <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+
+                <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+
+
+
+                <a href="signup.html" target="_blank"><i>Sign up</i></a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="calculator">
+        <form id="carbonForm">
+            <label for="transport">Choose Transportation Mode:</label>
+            <select id="transport" required>
+                <option value="airplane">Airplane</option>
+                <option value="train">Train</option>
+                <option value="car">Car</option>
+                <option value="bus">Bus</option>
+            </select>
+
+            <label for="distance">Enter Distance (in kilometers):</label>
+            <input type="number" id="distance" required placeholder="e.g., 500">
+
+            <button type="button" onclick="calculateCarbon()">Calculate Carbon Footprint</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Travel Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+//carbon foot print css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: #110e2c;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    height: 200px;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+.logoname a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+nav a {
+    float:left;
+    list-style-type:none;
+    cursor: pointer;
+    padding:19px 19px ; 
+ font-family:"Verdana "; 
+ display:block;
+ color:rgb(205, 214, 214);
+ font-weight:bold;
+ font-size: 23px;
+ text-align:center;
+text-decoration: none;
+ }  
+nav a:hover{
+background-color:#268f22;
+} 
+
+.wed-real-section{
+    
+    background: url("cheev.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+    
+    backdrop-filter: blur(0px);
+}
+
+nav button{
+ color: rgb(19, 193, 54);
+ background-color: rgb(233, 232, 232);
+ border-radius:10px;
+ 
+ text-align: end;
+}
+
+
+
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.calculator {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 800px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #3a9c43;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 385px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+//featured destination
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decorations</title>
+  <link rel="stylesheet" href="decorations.css">
+</head>
+
+<body>
+
+
+  <header>
+    <h1>FEATURED DESTINATION
+      <br>
+
+    </h1>
+    <nav>
+      <ul>
+        <a href="index.html" target="_blank"><u>Home</u></a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+        <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+
+        <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+
+        <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+
+
+        <!-- <button onclick="location.href='signup.html'" >Signup</button> -->
+        <a href="signup.html" target="_blank"><i>Sign up</i></a>
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <main class="decorations-container">
+    <div class="decoration-item">
+      <img src="download (1).jpeg" alt="Decoration Image 1" height="300px" width="500px">
+      <h2>AMAZON FOREST</h2>
+      <p><b>Description:</b> The world's largest and most biodiverse tropical rainforest."
+
+
+
+
+
+      </p>
+      <p>it is also known as:
+      <ul>
+        <li> Earth's lungs</li>
+        <li>biodiversity haven</li>
+        <li>indigenous cultures</li>
+        <li> climate stabilizer</li>
+        <li>carbon sink</li>
+
+
+      </ul>
+      </p>
+      <i>OXYGEN FOR THE WORLD</i>
+      <br>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+
+
+    <div class="decoration-item">
+      <img src="download.jpeg" alt="Decoration Image 2" height="300" width="500">
+      <h2>ANTARTICA</h2>
+      <p><b>Description:</b> Icy waters teeming with unique wildlife and the Earth's largest marine sanctuary.</p>
+      <p>Includes:
+      <ul>
+        <li> Icy realm</li>
+        <li> marine sanctuary</li>
+        <li>frigid depths</li>
+        <li> unique fauna</li>
+        <li>climate regulator</li>
+
+      </ul>
+      </p>
+      <p><I>glaciers are forming</I></p>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+
+
+    <div class="decoration-item">
+      <img src="download (2).jpeg" alt="Decoration Image 3" height="300" width="500">
+      <h2>Costa Rica</h2>
+      <p><b>Description:</b>A tropical paradise with numerous national parks, wildlife reserves, and protected lands,
+        promoting ecotourism and conservation</p>
+      <p>Includes:
+      <ul>
+        <li>lush rainforests</li>
+        <li>abundant wildlife</li>
+        <li>eco-tourism haven</li>
+        <li>sustainable practices</li>
+        <li>tropical paradise</li>
+
+      </ul>
+      </p>
+      <p>the morning mist swirling around you</p>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+
+
+    <div class="decoration-item">
+      <img src="download (3).jpeg" alt="Decoration Image 3" height="300" width="500">
+      <h2>Iceland </h2>
+      <p><b>Description:</b> Known for its stunning natural beauty and eco-friendly accommodations, Iceland is a leader
+        in sustainable tourism</p>
+      <p>it is also called:
+      <ul>
+        <li>geothermal marvel</li>
+        <li> volcanic landscapes</li>
+        <li>northern lights</li>
+        <li> eco-friendly initiatives</li>
+        <li> pristine nature</li>
+
+      </ul>
+      </p>
+      <p>What a mix of wild beauty and sustainability!</p>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+
+
+    <div class="decoration-item">
+      <img src="download (5).jpeg" alt="Decoration Image 3" height="300" width="500">
+      <h2>Copenhagen, Denmark</h2>
+      <p><b>Description:</b> Home to Copenhill, an artificial ski slope on top of a waste-to-power plant, and aiming to
+        become the world's first carbon-neutral city </p>
+      <p>Includes:
+      <ul>
+        <li> sustainable living</li>
+        <li>bike-friendly</li>
+        <li>urban parks</li>
+        <li>eco-conscious architecture</li>
+        <li>clean energy</li>
+      </ul>
+      </p>
+      <p>Feels like the perfect blend of urban innovation and green lifestyle</p>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+
+    <div class="decoration-item">
+      <img src="images.jpeg" alt="Decoration Image 3" height="300" width="500">
+      <h2>Valencia, Spain </h2>
+      <p><b>Description:</b> The city is famous for its paella, a traditional rice dish, and other local delicacies like
+        tiger nut milkb></p>
+      <p>it as:
+      <ul>
+        <li> solar city </li>
+        <li> renewable energy</li>
+        <li>lush parks</li>
+        <li>green transport</li>
+        <li>eco-conscious</li>
+
+      </ul>
+      </p>
+      <p>Quite the vibrant hub for sustainable living</p>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><strong>
+        <p>&copy; 2024 Eco-Friendly Travel Planner. All rights reserved.</p>
+      </strong></p>
+  </footer>
+</body>
+
+</html>
+//featured destination css
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  
+  text-align: center;
+  width: 2000px;
+  padding: 20px 0;
+  display: inline-block;
+  background-color: #100e23;
+  color: #cccccc;
+
+  
+  
+}
+nav a {
+  float:left;
+  list-style-type:none;
+  cursor: pointer;
+  padding:19px 19px ; 
+font-family:"Verdana "; 
+display:block;
+color:rgb(201, 203, 203);
+font-weight:bold;
+font-size: 23px;
+text-align:center;
+text-decoration: none;
+}  
+nav a:hover{
+background-color:#268f22;
+} 
+
+.wed-real-section{
+  
+  background: url("cheev.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(0px);
+}
+
+nav button{
+color: rgb(19, 193, 54);
+background-color: rgb(233, 232, 232);
+border-radius:10px;
+
+text-align: end;
+}
+.start-head{
+font-family:"Roboto" ;
+color: rgb(247, 184, 184);
+margin-top:00px;
+padding: 160px;
+font-size: 7.rem;
+text-align: center;
+-webkit-text-stroke:rgb(226, 228, 227);
+-webkit-text-stroke-width: 0.80px;
+}
+.start-para{
+font-family:"Roboto";
+color:rgb(33, 180, 148);
+font-size:20px;
+}
+.service-para{
+color: rgb(202, 194, 194);
+font-style: "Roboto";
+padding: 10px;
+margin: 10px;
+font-size:30px;
+text-align: center;
+
+}
+.service-head{
+font-family:"Roboto";
+color:#F5BD02 ;
+padding: 2px;
+margin: 10px;
+}
+
+main.decorations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+}
+
+.decoration-item {
+  border: 1px solid #ccc;
+  background-color: #f6f3f3;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.decoration-item h2 {
+  font-size: 24px;
+  
+  margin-bottom: 10px;
+}
+
+.decoration-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.decoration-item:hover{
+  background-color: rgb(255, 192, 98);
+}
+
+.decoration-item ul {
+  text-align: left;
+  margin-bottom: 10px;
+  
+}
+
+.decoration-item button {
+  background-color: #119a1c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.decoration-item button:hover {
+  background-color: #0c7d26;
+}
+
+footer {
+  background-color: #0c0b23;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body{
+  background-image: url(c1.jpg);
+  background-size: cover;
+}
+//shop html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Travel Planner - Shopping</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+   
+    background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a183f;
+    padding: 10px 20px;
+    background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+    
+}
+
+    
+.logo img {
+    height: 50px;
+}
+
+.logoname a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+nav a {
+    float:left;
+    list-style-type:none;
+    cursor: pointer;
+    padding:19px 19px ; 
+ font-family:"Verdana "; 
+ display:block;
+ color:rgb(205, 210, 210);
+ font-weight:bold;
+ font-size: 23px;
+ text-align:center;
+text-decoration: none;
+ }  
+nav a:hover{
+background-color:#268f22;
+} 
+
+
+
+nav button{
+ color: rgb(19, 193, 54);
+ background-color: rgb(233, 232, 232);
+ border-radius:10px;
+ 
+ text-align: end;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    
+    color: #0c3617;
+    background: #110e2c;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ffffffe6;
+    margin-bottom: 10px;
+    background-color: #89c28c;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #f3f3f3;
+}
+
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: rgb(220, 218, 218);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f0f4f1;
+    margin-top: 20px;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f1;
+            color: #333;
+            background-image: url(peakpx.jpg);
+        }
+
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1b193f;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            color: #f0f4f1;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: #ffffffe6;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #f3f3f3;
+        }
+
+        
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .product-card button:hover {
+            background-color: #45a049;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #f0f4f1;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <section class="hero">
+        <h1>Eco-Friendly Travel Planner</h1>
+        <p>Shop our collection of sustainable travel gear!
+            <br>
+            
+            <nav>
+                <ul>
+            <a href="index.html" target="_blank">Home</u></a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+            <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+            
+            <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+            
+            <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+            
+            
+            
+            <a href="signup.html" target="_blank"><i>Sign up</i></a>
+          </ul>
+          </nav>
+        </p>
+    </section>
+
+    <main>
+        <section class="product-gallery">
+            
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.50 AM (1).jpeg" alt="Reusable Water Bottle">
+                <h2>Reusable Water Bottle</h2>
+                <p>Stay hydrated and reduce plastic waste with this eco-friendly bottle.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.50 AM.jpeg" alt="Eco-Friendly Travel Bag">
+                <h2>Eco-Friendly Travel Bag</h2>
+                <p>Made from sustainable materials, perfect for eco-conscious travelers.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.51 AM.jpeg" alt="Bamboo Toothbrush">
+                <h2>Bamboo Toothbrush</h2>
+                <p>An essential for your travel kit, made from biodegradable bamboo.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.50 AM (2).jpeg" alt="Reusable Straw Set">
+                <h2>Reusable Straw Set</h2>
+                <p>Includes stainless steel straws and a cleaner, for eco-friendly sipping.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.53 AM.jpeg" alt="Solar Power Charger">
+                <h2>Solar Power Charger</h2>
+                <p>Charge your devices sustainably while on the go with solar energy.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.52 AM.jpeg" alt="Compostable Travel Plate">
+                <h2>Compostable Travel Plate</h2>
+                <p>Biodegradable plates for a zero-waste dining experience.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.50 AM (3).jpeg" alt="Eco Travel Blanket">
+                <h2>Eco Travel Blanket</h2>
+                <p>Made from recycled materials, soft and cozy for sustainable travels.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.51 AM (1).jpeg" alt="Recycled Plastic Sandals">
+                <h2>Recycled Plastic Sandals</h2>
+                <p>Comfortable, stylish sandals crafted from recycled ocean plastic.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.54 AM.jpeg" alt="Biodegradable Toiletries">
+                <h2>Biodegradable Toiletries</h2>
+                <p>Eco-friendly soaps and shampoos to keep your travel kit green.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2024-10-29 at 11.45.53 AM (1).jpeg" alt="Organic Sunscreen">
+                <h2>Organic Sunscreen</h2>
+                <p>Reef-safe and organic sunscreen for sun protection without harm.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <div class="product-card">
+                <img src="Eco-Friendly Travel Journal.jpeg" alt="Eco-Friendly Travel Pillow">
+                <h2>Eco-Friendly Travel Pillow</h2>
+                <p>Comfortable and sustainable, made from recycled fibers.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="Reusable Utensil Set.jpeg" alt="Reusable Utensil Set">
+                <h2>Reusable Utensil Set</h2>
+                <p>Includes fork, spoon, and knife made from sustainable materials.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="Eco-Friendly Travel Journal.jpeg" alt="Eco-Friendly Travel Journal">
+                <h2>Eco-Friendly Travel Journal</h2>
+                <p>Document your journey in this sustainably sourced notebook.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="Recycled Polyester Daypack.jpeg" alt="Recycled Polyester Daypack">
+                <h2>Recycled Polyester Daypack</h2>
+                <p>A sturdy, compact backpack made from recycled materials.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="Biodegradable Wet Wipes.jpeg" alt="Biodegradable Wet Wipes">
+                <h2>Biodegradable Wet Wipes</h2>
+                <p>Eco-friendly wet wipes for convenient, waste-free clean-ups.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="Eco-Friendly Sunglasses.jpeg" alt="Eco-Friendly Sunglasses">
+                <h2>Eco-Friendly Sunglasses</h2>
+                <p>Stylish and sustainable sunglasses with recycled frames.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 17 -->
+            <div class="product-card">
+                <img src="Organic Bug Repellent.jpeg" alt="Organic Bug Repellent">
+                <h2>Organic Bug Repellent</h2>
+                <p>Natural bug repellent to keep pests away without chemicals.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 18 -->
+            <div class="product-card">
+                <img src="Recycled Material Belt.jpeg" alt="Recycled Material Belt">
+                <h2>Recycled Material Belt</h2>
+                <p>A sturdy, stylish belt crafted from recycled materials.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 19 -->
+            <div class="product-card">
+                <img src="Compostable Trash Bags.jpeg" alt="Compostable Trash Bags">
+                <h2>Compostable Trash Bags</h2>
+                <p>Perfect for eco-friendly disposal on the go.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 20 -->
+            <div class="product-card">
+                <img src="download (15).jpeg" alt="Sustainable Travel Cutlery">
+                <h2>Sustainable Travel Cutlery</h2>
+                <p>Durable cutlery set made from bamboo for waste-free dining.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 21 -->
+            <div class="product-card">
+                <img src="download (14).jpeg" alt="Organic Cotton Towels">
+                <h2>Organic Cotton Towels</h2>
+                <p>Soft, absorbent towels made from organic cotton.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+            <!-- Product 22 -->
+            <div class="product-card">
+                <img src="Eco-Friendly Portable Charger.jpeg" alt="Eco-Friendly Portable Charger">
+                <h2>Eco-Friendly Portable Charger</h2>
+                <p>Keep your devices charged with this sustainable power bank.</p>
+                <button><a href="buy.html">Buy Now</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Travel Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+// contact html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Page</title>
+  <link rel="stylesheet" href="consult.css">
+</head>
+<body>
+  <div class="hello">
+  <header>
+    <h1>FEATURED DESTINATION
+      <br>
+           
+    </h1>
+        <nav>
+            <ul>
+               <a href="index.html" target="_blank"><u>Home</u></a>
+               <a href="about.html" target="_blank">About</a>
+               <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+               <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+              
+               <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+               
+               <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+              
+               
+               <a href="signup.html" target="_blank"><i>Sign up</i></a>
+            </ul>
+        </nav>
+
+  </header>
+  <br>
+  
+  <main>
+    <div class="card">
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <input type="submit" value="Submit" onclick="say()">
+      <script>
+        function say(){
+          alert("Your Response Submited")
+        }
+      </script>
+    </form>
+  </div></main>
+  
+  <br><br><br><br><br><br><footer>
+    <br><p>Contact us for a personalized consultation for your dream wedding!</p>
+  </footer>
+</div></body>
+</html>
+// contact css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+    width: 2000px;
+  padding: 20px 0;
+  display: inline-block;
+  background-color: #100e23;
+  color: #cccccc;
+
+      
+      
+  
+      
+        
+  
+
+  }
+  nav a {
+    float:left;
+    list-style-type:none;
+    cursor: pointer;
+    padding:19px 19px ; 
+  font-family:"Verdana "; 
+  display:block;
+  color:rgb(201, 203, 203);
+  font-weight:bold;
+  font-size: 23px;
+  text-align:center;
+  text-decoration: none;
+  }  
+  nav a:hover{
+  background-color:#268f22;
+  } 
+  
+  .wed-real-section{
+    
+    background: url("cheev.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(0px);
+  }
+  
+  nav button{
+  color: rgb(19, 193, 54);
+  background-color: rgb(233, 232, 232);
+  border-radius:10px;
+  
+  text-align: end;
+  }
+  main {
+    width: 350px;
+    margin-left: 700px;
+    border: 1px solid azure;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  label,
+  input,
+  textarea {
+    width: 350px;
+    height: 40px;
+  }
+  
+  input[type="submit"] {
+    background-color: #19173c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #d1c9c8;
+  }
+  
+  footer {
+    background-color: #0f0d2b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 280px;
+  }
+
+.hello{
+  background-image: url(c1.jpg);
+  background-size: cover;
+}
+//sign up htm;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="navbar">
+    
+        <nav>
+            <ul>
+               <a href="index.html" target="_blank"><u>Home</u></a>
+               <a href="about.html" target="_blank">About</a>
+               <a href="consult.html" target="_blank"><i>Contact Us</i></a>
+               <a href="Featured destination .html" target="_blank"><i>Featured Destination</i></a>
+              
+               <a href="shop.html" target="_blank"><i>Shop Now</i></a>
+               
+               <a href="carbon footprint.html" target="_blank"><i>Carbon Footprint</i></a>
+              
+               
+               <a href="signup.html" target="_blank"><i>Sign up</i></a>
+            </ul>
+        </nav>
+
+  </div>
+
+
+  <div class="signup-container">
+    <form class="signup-form" action="/register" method="POST"></form>
+            <a href="index.html">Go Home</a>
+      <h1>Sign Up</h1>
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      <p>Already a member? <a href="login.html">Click here to login</a></p>
+    </div>
+  </div>
+</body>
+</html>
+//sign up css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.navbar {
+    
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  /* width: 4000px; */
+padding: 20px ;
+display: inline-block;
+background-color: #100e23;
+color: #cccccc;
+/* margin-bottom: 890px; */
+}
+    
+    
+
+    
+      
+
+
+
+nav a {
+  float:left;
+  list-style-type:none;
+  cursor: pointer;
+  padding:19px 19px ; 
+font-family:"Verdana "; 
+display:block;
+color:rgb(201, 203, 203);
+font-weight:bold;
+font-size: 23px;
+text-align:center;
+text-decoration: none;
+}  
+nav a:hover{
+background-color:#268f22;
+} 
+
+.wed-real-section{
+  
+  background: url("cheev.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(0px);
+}
+
+nav button{
+color: rgb(19, 193, 54);
+background-color: rgb(233, 232, 232);
+border-radius:10px;
+
+text-align: end;
+}
+
+.signup-container {
+  width: 500px;
+  background-color: #19123f;
+  padding: 50px;
+  padding-left: 87px;
+  border-radius: 5px;
+  margin-right: 700px;
+  box-shadow: 0 0 10px rgba(3, 2, 2, 0.1);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #080404;
+}
+
+button {
+  background-color: #4caf50;
+  color: rgb(209, 205, 205);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/ferr html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Destination</title>
+  <style>
+    /* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header and navigation styling */
+header {
+  text-align: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-menu a, .nav-menu button {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu button:hover {
+  background-color: #4CAF50;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Main content styling */
+.decorations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.decoration-item {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.decoration-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer p {
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav-menu">
+      <a href="index.html"><u>Home</u></a>
+      <a href="about.html">About</a>
+      <a href="consult.html"><i>Contact</i></a>
+      <a href="Featured destination.html"><i>Featured Destination</i></a>
+      <a href="shop.html"><i>Shop Now</i></a>
+      <a href="carbon footprint.html"><i>Carbon Footprint</i></a>
+      <a href="signup.html" target="_blank"><i>Sign up</i></a>
+    </nav>
+    <h1>Featured Destination</h1>
+  </header>
+
+  <main class="decorations-container">
+    <!-- Destination Content -->
+    <div class="decoration-item">
+      <img src="download (1).jpeg" alt="Amazon Forest" height="300px" width="500px">
+      <h2>AMAZON FOREST</h2>
+      <p><b>Description:</b> The world's largest and most biodiverse tropical rainforest.</p>
+      <ul>
+        <li>Earth's lungs</li>
+        <li>Biodiversity haven</li>
+        <li>Indigenous cultures</li>
+        <li>Climate stabilizer</li>
+        <li>Carbon sink</li>
+      </ul>
+      <button><a href="Book (1).html">Book Now</a></button>
+    </div>
+
+    <!-- Repeat this block for each featured destination -->
+    
+  </main>
+
+  <footer>
+    <p><strong>NATURE AS EVERYTHING</strong></p>
+  </footer>
+
+</body>
+</html>
+
+
