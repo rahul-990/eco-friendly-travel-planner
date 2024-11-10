@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: url(5b058730-8d33-4230-a220-e769a8fafd0a.jpeg);
+}
+
+header {
+    background: #140e2d;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+.logoname a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+nav a {
+    float:left;
+    list-style-type:none;
+    cursor: pointer;
+    padding:19px 19px ; 
+ font-family:"Verdana "; 
+ display:block;
+ color:rgb(205, 214, 214);
+ font-weight:bold;
+ font-size: 23px;
+ text-align:center;
+text-decoration: none;
+ }  
+nav a:hover{
+background-color:#268f22;
+} 
+
+.wed-real-section{
+    
+    background: url("cheev.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(0px);
+}
+
+nav button{
+ color: rgb(19, 193, 54);
+ background-color: rgb(233, 232, 232);
+ border-radius:10px;
+ 
+ text-align: end;
+}
+
+
+
+
+
+
+
+
+
+.about-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.about-content p, .about-content ul {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #c8cbca;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    color: #16881a;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #4CAF50;
+    color: #a2a0a08d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #3a9c43;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
